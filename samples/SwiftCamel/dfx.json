@@ -1,0 +1,8 @@
+{
+    "canisters": {
+      "Swift": {
+        "main": "main.mo",
+        "type": "motoko"
+      }
+    }
+}
