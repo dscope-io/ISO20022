@@ -28,14 +28,7 @@ Modify [application.properties](application.properties) file to set canister loc
 
 ```
 ic.location=http://127.0.0.1:4943/
-ic.canister=su63m-yyaaa-aaaaa-aaala-cai
-```
-
-Run Gradle [build](build.gradle). Modify Java version in the build file if higher than 1.8.
-
-```
-gradle build
-```
+ic.canister=
 
 Then run Camel application using [Jbang tool](https://www.jbang.dev/)
 
