@@ -18,7 +18,7 @@ To run this sample start local IC instance in background using dfx tool
 dfx start –background
 ```
 
-Canister source code is in [main.mo](main.mo) file. To install the sample canister run dfx deploy command in this directory.
+Canister source code is in [main.mo](main.mo) file. Generated Motoko ISO20022 compatible types are in [CustomerCreditTransferInitiationV03Types.mo](CustomerCreditTransferInitiationV03Types.mo) file. To install the sample canister run dfx deploy command in this directory.
 
 ```
 dfx deploy
