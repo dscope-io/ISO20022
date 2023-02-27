@@ -29,6 +29,7 @@ Modify [application.properties](application.properties) file to set canister loc
 ```
 ic.location=http://127.0.0.1:4943/
 ic.canister=
+```
 
 Then run Camel application using [Jbang tool](https://www.jbang.dev/)
 
