@@ -2,7 +2,7 @@
 
 This application requires Java version 11.
 
-In this sample we demonstrate how to use [Apache Camel] (https://camel.apache.org/) and [IC4J Camel Component] (https://github.com/ic4j/ic4j-camel) to invoke IC smart contract with ISO20022 payload ([CustomerCreditTransferInitiation](https://www.iso20022.org/iso-20022-message-definitions)). 
+In this sample we demonstrate how to use [Apache Camel](https://camel.apache.org/) and [IC4J Camel Component](https://github.com/ic4j/ic4j-camel) to invoke IC smart contract with ISO20022 payload ([CustomerCreditTransferInitiation](https://www.iso20022.org/iso-20022-message-definitions)). 
 Motoko types representing Swift documents are generated from ISO20022 XML definition. The Java client then uses JAXB serializer and deserializer to convert [Prowide JAXB XML Objects](https://github.com/prowide/prowide-iso20022) to Candid types and back.
 
 The sample reads ISO20022 XML payload from XML file, converts XML to JAXB using [Prowide library](https://dev.prowidesoftware.com/SRU2022/) and calls IC smart contract with Motoko payload. The smart contract then simply returns the same data back.
