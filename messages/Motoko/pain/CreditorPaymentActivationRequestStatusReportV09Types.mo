@@ -350,9 +350,6 @@ module {
 		Prxy : ?ProxyAccountIdentification1;
 	};
 
-	public type boolean = {
-	};
-
 	public type ActiveCurrencyAndAmount = {
 		Ccy : Text;
 		value : Float;
@@ -364,9 +361,9 @@ module {
 	};
 
 	public type PaymentCondition1 = {
-		AmtModAllwd : ?boolean;
-		GrntedPmtReqd : ?boolean;
-		EarlyPmtAllwd : ?boolean;
+		AmtModAllwd : ?Bool;
+		GrntedPmtReqd : ?Bool;
+		EarlyPmtAllwd : ?Bool;
 		DelyPnlty : ?Text;
 		ImdtPmtRbt : ?AmountOrRate1Choice;
 	};
@@ -718,9 +715,9 @@ module {
 	};
 
 	public type PaymentConditionStatus1 = {
-		EarlyPmt : ?boolean;
+		EarlyPmt : ?Bool;
 		AccptdAmt : ?ActiveCurrencyAndAmount;
-		GrntedPmt : ?boolean;
+		GrntedPmt : ?Bool;
 	};
 
 	public type PaymentTransaction136 = {

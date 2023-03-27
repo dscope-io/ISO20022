@@ -324,14 +324,11 @@ module {
 		Prtry : ?Text;
 	};
 
-	public type boolean = {
-	};
-
 	public type MandateAdjustment1 = {
 		Amt : ?ActiveCurrencyAndAmount;
 		Ctgy : ?Frequency37Choice;
 		Rate : ?Float;
-		DtAdjstmntRuleInd : ?boolean;
+		DtAdjstmntRuleInd : ?Bool;
 	};
 
 	public type SequenceType2Code = {
@@ -402,7 +399,7 @@ module {
 		UltmtCdtr : ?PartyIdentification135;
 		UltmtDbtr : ?PartyIdentification135;
 		Adjstmnt : ?MandateAdjustment1;
-		TrckgInd : ?boolean;
+		TrckgInd : ?Bool;
 		ColltnAmt : ?ActiveCurrencyAndAmount;
 		Ocrncs : ?MandateOccurrences5;
 		MaxAmt : ?ActiveCurrencyAndAmount;

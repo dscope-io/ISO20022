@@ -503,9 +503,6 @@ module {
 		PlcAndNm : ?Text;
 	};
 
-	public type boolean = {
-	};
-
 	public type ActiveCurrencyAndAmount = {
 		Ccy : Text;
 		value : Float;
@@ -517,9 +514,9 @@ module {
 	};
 
 	public type PaymentCondition1 = {
-		AmtModAllwd : ?boolean;
-		GrntedPmtReqd : ?boolean;
-		EarlyPmtAllwd : ?boolean;
+		AmtModAllwd : ?Bool;
+		GrntedPmtReqd : ?Bool;
+		EarlyPmtAllwd : ?Bool;
 		DelyPnlty : ?Text;
 		ImdtPmtRbt : ?AmountOrRate1Choice;
 	};
