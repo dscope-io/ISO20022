@@ -8,19 +8,8 @@
             message: ${body}
             id: log-5f36
         - to:
-            uri: bean:MxPain00100103
-            id: to-6785
-            parameters:
-              method: parse(${body})
-        - setBody:
-            id: setBody-cdf5
-            expression:
-              simple:
-                expression: ${body.getCstmrCdtTrfInitn}
-                id: simple-52d6
-        - log:
-            message: ${body}
-            id: log-4271
+            uri: iso20022:unmarshal
+            id: to-b080
         - to:
             uri: ic:update
             id: to-f09b
@@ -34,9 +23,9 @@
               outClass: >-
                 com.prowidesoftware.swift.model.mx.dic.CustomerCreditTransferInitiationV03
               loadIDL: false
+        - to:
+            uri: iso20022:marshal
+            id: to-9ba2
         - log:
             message: ${body}
             id: log-1371
-- beans:
-    - name: MxPain00100103
-      type: com.prowidesoftware.swift.model.mx.MxPain00100103
