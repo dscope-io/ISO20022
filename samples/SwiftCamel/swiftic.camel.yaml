@@ -26,6 +26,8 @@
         - to:
             uri: iso20022:marshal
             id: to-9ba2
+            parameters:
+              messageType: pain.001.001.03
         - log:
             message: ${body}
             id: log-1371
