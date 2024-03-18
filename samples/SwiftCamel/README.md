@@ -1,6 +1,6 @@
 # IC4J Camel Component sample calling the IC canister with Swift ISO20022 document.
 
-This application requires Java version 11.
+This application requires Java version 17.
 
 In this sample we demonstrate how to use [Apache Camel] (https://camel.apache.org/) and [IC4J Camel Component] (https://github.com/ic4j/ic4j-camel) to invoke IC smart contract with ISO20022 payload ([CustomerCreditTransferInitiation](https://www.iso20022.org/iso-20022-message-definitions)). 
 Motoko types representing Swift documents are generated from ISO20022 XML definition. The Java client then uses JAXB serializer and deserializer to convert [Prowide JAXB XML Objects](https://github.com/prowide/prowide-iso20022) to Candid types and back.
@@ -34,6 +34,6 @@ ic.canister=
 Then run Camel application using [Jbang tool](https://www.jbang.dev/)
 
 ```
-jbang -Dcamel.jbang.version=3.20.1 camel@apache/camel run swiftic.camel.yaml 
+jbang -Dcamel.jbang.version=4.4.0 camel@apache/camel run swiftic.camel.yaml 
 ```
 
