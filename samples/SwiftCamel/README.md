@@ -34,6 +34,6 @@ ic.canister=
 Then run Camel application using [Jbang tool](https://www.jbang.dev/)
 
 ```
-jbang -Dcamel.jbang.version=4.4.0 camel@apache/camel run swiftic.camel.yaml 
+jbang -Dcamel.jbang.version=4.20.0 camel@apache/camel run swiftic.camel.yaml 
 ```
 

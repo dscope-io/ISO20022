@@ -1,33 +1,37 @@
 - route:
     id: route-7e05
     from:
-      uri: file:data?noop=true
       id: from-74c5
+      uri: file
+      parameters:
+        directoryName: data?noop=true
       steps:
         - log:
-            message: ${body}
             id: log-5f36
+            message: ${body}
         - to:
-            uri: iso20022:unmarshal
             id: to-b080
+            uri: iso20022:unmarshal
+            parameters:
+              messageType: pain.001.001.03
         - to:
-            uri: ic:update
             id: to-f09b
+            uri: ic:update
             parameters:
               canisterId: '{{ic.canister}}'
               method: initiateTransfer
               url: '{{ic.location}}'
               fetchRootKey: true
-              inType: jaxb
-              outType: jaxb
+              inType: jaxb.jakarta
+              outType: jaxb.jakarta
               outClass: >-
                 com.prowidesoftware.swift.model.mx.dic.CustomerCreditTransferInitiationV03
               loadIDL: false
         - to:
-            uri: iso20022:marshal
             id: to-9ba2
+            uri: iso20022:marshal
             parameters:
               messageType: pain.001.001.03
         - log:
-            message: ${body}
             id: log-1371
+            message: ${body}
